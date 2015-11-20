@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Tiedostoja\nBeam\cef_binary_3.2556.1351.gc199539_windows32\CMakeFiles\e200e07c904500df4c853705cda754e8\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{40BB626F-CE19-3E41-BC93-B10EDD59626C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
