@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{0E11A043-31F5-32B9-87FF-84FF4ECBCC33}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>nbeam</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Tiedostoja\nBeam\testi\cef\build\nbeam\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">nbeam.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">nbeam</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Tiedostoja\nBeam\testi\cef\build\nbeam\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">nbeam.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">nbeam</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Tiedostoja\nBeam\testi\cef;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4244;4512;4701;4702;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;WIN32;_WIN32;_WINDOWS;UNICODE;_UNICODE;WINVER=0x0602;_WIN32_WINNT=0x602;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;PSAPI_VERSION=1;CEF_USE_SANDBOX;CEF_USE_ATL;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;WIN32;_WIN32;_WINDOWS;UNICODE;_UNICODE;WINVER=0x0602;_WIN32_WINNT=0x602;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;PSAPI_VERSION=1;CEF_USE_SANDBOX;CEF_USE_ATL;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Tiedostoja\nBeam\testi\cef;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Tiedostoja\nBeam\testi\cef;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>														</Message>
+      <Command>setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Tiedostoja/nBeam/testi/cef/Debug/d3dcompiler_43.dll C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Debug/d3dcompiler_43.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Tiedostoja/nBeam/testi/cef/Debug/d3dcompiler_47.dll C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Debug/d3dcompiler_47.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Tiedostoja/nBeam/testi/cef/Debug/libcef.dll C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Debug/libcef.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Tiedostoja/nBeam/testi/cef/Debug/libEGL.dll C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Debug/libEGL.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Tiedostoja/nBeam/testi/cef/Debug/libGLESv2.dll C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Debug/libGLESv2.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Tiedostoja/nBeam/testi/cef/Debug/natives_blob.bin C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Debug/natives_blob.bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Tiedostoja/nBeam/testi/cef/Debug/snapshot_blob.bin C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Debug/snapshot_blob.bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Tiedostoja/nBeam/testi/cef/Debug/wow_helper.exe C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Debug/wow_helper.exe
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Tiedostoja/nBeam/testi/cef/Resources/cef.pak C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Debug/cef.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Tiedostoja/nBeam/testi/cef/Resources/cef_100_percent.pak C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Debug/cef_100_percent.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Tiedostoja/nBeam/testi/cef/Resources/cef_200_percent.pak C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Debug/cef_200_percent.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Tiedostoja/nBeam/testi/cef/Resources/cef_extensions.pak C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Debug/cef_extensions.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Tiedostoja/nBeam/testi/cef/Resources/devtools_resources.pak C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Debug/devtools_resources.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Tiedostoja/nBeam/testi/cef/Resources/icudtl.dat C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Debug/icudtl.dat
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_directory C:/Tiedostoja/nBeam/testi/cef/Resources/locales C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Debug/locales
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\Debug\libcef.lib;..\libcef_dll\Debug\libcef_dll_wrapper.lib;comctl32.lib;rpcrt4.lib;shlwapi.lib;..\..\Debug\cef_sandbox.lib;dbghelp.lib;psapi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Debug/nbeam.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Debug/nbeam.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Tiedostoja\nBeam\testi\cef;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4244;4512;4701;4702;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;_NDEBUG;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;WIN32;_WIN32;_WINDOWS;UNICODE;_UNICODE;WINVER=0x0602;_WIN32_WINNT=0x602;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;PSAPI_VERSION=1;CEF_USE_SANDBOX;CEF_USE_ATL;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;_NDEBUG;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;WIN32;_WIN32;_WINDOWS;UNICODE;_UNICODE;WINVER=0x0602;_WIN32_WINNT=0x602;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;PSAPI_VERSION=1;CEF_USE_SANDBOX;CEF_USE_ATL;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Tiedostoja\nBeam\testi\cef;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Tiedostoja\nBeam\testi\cef;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>														</Message>
+      <Command>setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Tiedostoja/nBeam/testi/cef/Release/d3dcompiler_43.dll C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Release/d3dcompiler_43.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Tiedostoja/nBeam/testi/cef/Release/d3dcompiler_47.dll C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Release/d3dcompiler_47.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Tiedostoja/nBeam/testi/cef/Release/libcef.dll C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Release/libcef.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Tiedostoja/nBeam/testi/cef/Release/libEGL.dll C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Release/libEGL.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Tiedostoja/nBeam/testi/cef/Release/libGLESv2.dll C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Release/libGLESv2.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Tiedostoja/nBeam/testi/cef/Release/natives_blob.bin C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Release/natives_blob.bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Tiedostoja/nBeam/testi/cef/Release/snapshot_blob.bin C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Release/snapshot_blob.bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Tiedostoja/nBeam/testi/cef/Release/wow_helper.exe C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Release/wow_helper.exe
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Tiedostoja/nBeam/testi/cef/Resources/cef.pak C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Release/cef.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Tiedostoja/nBeam/testi/cef/Resources/cef_100_percent.pak C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Release/cef_100_percent.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Tiedostoja/nBeam/testi/cef/Resources/cef_200_percent.pak C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Release/cef_200_percent.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Tiedostoja/nBeam/testi/cef/Resources/cef_extensions.pak C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Release/cef_extensions.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Tiedostoja/nBeam/testi/cef/Resources/devtools_resources.pak C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Release/devtools_resources.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Tiedostoja/nBeam/testi/cef/Resources/icudtl.dat C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Release/icudtl.dat
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_directory C:/Tiedostoja/nBeam/testi/cef/Resources/locales C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Release/locales
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\Release\libcef.lib;..\libcef_dll\Release\libcef_dll_wrapper.lib;comctl32.lib;rpcrt4.lib;shlwapi.lib;..\..\Release\cef_sandbox.lib;dbghelp.lib;psapi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Release/nbeam.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Tiedostoja/nBeam/testi/cef/build/nbeam/Release/nbeam.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Tiedostoja\nBeam\testi\cef\nbeam\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Tiedostoja/nBeam/testi/cef/nbeam/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Tiedostoja/nBeam/testi/cef -BC:/Tiedostoja/nBeam/testi/cef/build --check-stamp-file C:\Tiedostoja\nBeam\testi\cef\build\nbeam\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Tiedostoja/nBeam/testi/cef/nbeam/CMakeLists.txt;C:\Tiedostoja\nBeam\testi\cef\nbeam\CMakeLists.txt;C:\Tiedostoja\nBeam\testi\cef\nbeam\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Tiedostoja\nBeam\testi\cef\build\nbeam\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Tiedostoja/nBeam/testi/cef/nbeam/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Tiedostoja/nBeam/testi/cef -BC:/Tiedostoja/nBeam/testi/cef/build --check-stamp-file C:\Tiedostoja\nBeam\testi\cef\build\nbeam\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Tiedostoja/nBeam/testi/cef/nbeam/CMakeLists.txt;C:\Tiedostoja\nBeam\testi\cef\nbeam\CMakeLists.txt;C:\Tiedostoja\nBeam\testi\cef\nbeam\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Tiedostoja\nBeam\testi\cef\build\nbeam\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Tiedostoja\nBeam\testi\cef\nbeam\simple_app.h" />
+    <ClInclude Include="C:\Tiedostoja\nBeam\testi\cef\nbeam\simple_handler.h" />
+    <ClCompile Include="C:\Tiedostoja\nBeam\testi\cef\nbeam\simple_app.cc"  />
+    <ClCompile Include="C:\Tiedostoja\nBeam\testi\cef\nbeam\simple_handler.cc"  />
+    <ClCompile Include="C:\Tiedostoja\nBeam\testi\cef\nbeam\cefsimple_win.cc"  />
+    <ClCompile Include="C:\Tiedostoja\nBeam\testi\cef\nbeam\simple_handler_win.cc"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Tiedostoja/nBeam/testi/cef/build/ZERO_CHECK.vcxproj">
+      <Project>6AAE873E-CCC5-3491-A41B-8DA7E7A4E830</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Tiedostoja/nBeam/testi/cef/build/libcef_dll/libcef_dll_wrapper.vcxproj">
+      <Project>996B2623-3934-3890-A495-EE44EC506028</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -127,7 +127,7 @@ cmake_minimum_required(VERSION 2.8.12.1)
 set(CMAKE_CONFIGURATION_TYPES Debug Release)
 
 # Project name.
-project(cef)
+project(nBeam)
 
 # Use folders in the resulting project files.
 set_property(GLOBAL PROPERTY OS_FOLDERS ON)
@@ -526,8 +526,9 @@ set(CMAKE_SHARED_LINKER_FLAGS_RELEASE "${CEF_LINKER_FLAGS_RELEASE} ${CEF_SHARED_
 #
 
 add_subdirectory(libcef_dll)
-add_subdirectory(cefclient)
-add_subdirectory(cefsimple)
+add_subdirectory(nbeam)
+#add_subdirectory(cefclient)
+#add_subdirectory(cefsimple)
 
 
 #
